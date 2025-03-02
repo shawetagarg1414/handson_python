@@ -1,0 +1,18 @@
+{
+ "list":[
+    {
+        "id":1,
+        "title":"Need to setup a database",
+        "added_on":"2025-12-01",
+        "priority":"High",
+        "isCompleted":false
+    },{
+        "id":2,
+        "title":"Need to update Json file",
+        "added_on":"2025-12-01",
+        "priority":"High",
+        "isCompleted":false
+    },
+    {}
+ ]
+}

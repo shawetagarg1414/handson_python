@@ -84,6 +84,12 @@ def main():
             continue
 ## This is new comment added
 
+## NEXT STEPS
+
+## 1. Create a local .json file 
+# save all todos in json file (json file will work like a local database)
+# update .json file based on new todo added | modified | deleted | mark as completed 
+
         
 main()        
 
