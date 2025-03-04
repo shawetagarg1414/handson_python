@@ -1,5 +1,15 @@
-var config = require('./test3.json');
+// var config = require('./test3.json');
 // console.log(config.firstName + ' ' + config.lastName);
+
+var config = require('./todo.json');
+console.log(config)
+
+// var objc = JSON.parse(config);
+// console.log(objc);
+config['list'].push({"name":"4","sage":"pending","date":"pending"});
+console.log(config);
+
+
 
 // const objc = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
 // console.log(objc);
@@ -14,10 +24,13 @@ var config = require('./test3.json');
 // const obj = JSON.parse(textt);
 // console.log(obj)
 
-var obj = '{"list":[{"name":"John", "age":"30", "city":"New York"}]}';
-var objc = JSON.parse(jsonStr);
-objc['list'].push({"name":"4","sage":"pending","date":"pending"});
-console.log(objc);
+
+// var jsonStr = '{"list":[{"name":"John", "age":"30", "city":"New York"}]}';
+// console.log(jsonStr);
+// var objc = JSON.parse(jsonStr);
+// objc['list'].push({"name":"4","sage":"pending","date":"pending"});
+// console.log(objc);
+
 
 // var jsonStr = '{"theTeam":[{"teamId":"1","status":"pending"},{"teamId":"2","status":"member"},{"teamId":"3","status":"member"}]}';
 // var obj = JSON.parse(jsonStr);
