@@ -1,15 +1,13 @@
 // var config = require('./test3.json');
 // console.log(config.firstName + ' ' + config.lastName);
 
-var config = require('./todo.json');
-console.log(config)
+// var config = require('./todo.json');
+// console.log(config)
+// config['list'].push({"name":"4","sage":"pending","date":"pending"});
+// console.log(config);
 
-// var objc = JSON.parse(config);
-// console.log(objc);
-config['list'].push({"name":"4","sage":"pending","date":"pending"});
-console.log(config);
-
-
+const objc = JSON.parse('./todo.json');
+console.log(objc);
 
 // const objc = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
 // console.log(objc);
@@ -30,9 +28,3 @@ console.log(config);
 // var objc = JSON.parse(jsonStr);
 // objc['list'].push({"name":"4","sage":"pending","date":"pending"});
 // console.log(objc);
-
-
-// var jsonStr = '{"theTeam":[{"teamId":"1","status":"pending"},{"teamId":"2","status":"member"},{"teamId":"3","status":"member"}]}';
-// var obj = JSON.parse(jsonStr);
-// obj['theTeam'].push({"teamId":"4","status":"pending"});
-// jsonStr = JSON.stringify(obj);
