@@ -58,7 +58,7 @@ def delete(ttask):
 
 def modify(ttask):
     num=int(input('Enter task no. to edit: '))
-    numb=int(input('What would you like to modify? 1. id,\n 2. title,\n 3. time,\n 4. priority,\n 5. Status '))
+    numb=int(input('What would you like to modify?\n 1. Id,\n 2. Title,\n 3. Time,\n 4. Priority,\n 5. Status\n '))
     # print(num-1)
     with open('todo.json', 'r+') as f:
         jdata = json.load(f)
@@ -87,6 +87,7 @@ def modify(ttask):
              print(jdata)
         elif numb==4:
              tid=input('Enter modified task priority: ')
+            #  print(tid)
              d=jdata['list'][(num-1)]
              d['priority']=tid
              f.seek(0)
@@ -95,7 +96,7 @@ def modify(ttask):
         elif numb==5:
              tid=input('Enter modified task status: ' )
              d=jdata['list'][(num-1)]
-             d['status']=tid
+             d['Completed']=tid
              f.seek(0)
              f.write(json.dumps(jdata, indent=2))
              print(jdata)
@@ -117,6 +118,7 @@ def completedtask(ttask):
         #    print(d)
            if d=="no":
              jdata['list'][(count-1)]['Completed']='yes'
+            #  d="yes"
              f.seek(0)        # reset file position to the beginning
              f.write(json.dumps(jdata, indent=2))
              print(jdata)
@@ -158,8 +160,8 @@ def main():
        modify(ttask)
     elif value==4:
        completedtask(ttask)
-    # elif value==5:
-    #   break
+    elif value==5:
+      break
     else:
         print('Wrong input, Re-enter ')
         break
